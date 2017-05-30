@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
         printf("Error al abrir el archivo.");
     }
 
-    // Caso en que no hay errores al abrir el archivo
+    // Caso en que no hay errores al abrir el archivo (resto del programa)
     else { 
     
         // Leer la cabecera 
@@ -143,7 +143,10 @@ int main(int argc, char *argv[])
             posX  = listaYardas[i][0];
             posY  = listaYardas[i][1];
             valor = listaYardas[i][2];
-            if ((0<=posX<=N-1) && (0<=posY<=N-1))
+            
+            if ( ( (0<=posX)&&(posX<=N-1) ) && 
+                 ( (0<=posY)&&(posY<=N-1) ) 
+               )
                 campoInicial[posX][posY] = valor;         
         }; 
     

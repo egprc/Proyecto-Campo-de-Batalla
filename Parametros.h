@@ -6,8 +6,8 @@
 #define FALSE 0
 #define TRUE !FALSE
 
-#ifndef _PARAMETROS_H_
-#define _PARAMETROS_H_
+#ifndef PARAMETROS_H
+#define PARAMETROS_H
 
 
 int Parametros(int *procesos, int*hilos, int *cantidad, int argc, char **argv);

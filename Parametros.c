@@ -59,5 +59,5 @@ int Parametros(int *procesos, int *hilos, int *cantidad, int argc, char **argv) 
         printf("Debe elegir entre procesos o hilos; NO se permiten ambos\n");
         exit(1);
     };
-    return true;
+    return TRUE;
 }
